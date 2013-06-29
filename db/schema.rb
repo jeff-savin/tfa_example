@@ -31,8 +31,8 @@ ActiveRecord::Schema.define(:version => 20130627214946) do
   create_table "admin_users", :force => true do |t|
     t.string   "password_salt"
     t.string   "password_hash"
-    t.datetime "created_at",                                                  :null => false
-    t.datetime "updated_at",                                                  :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
     t.string   "email",                                       :default => "", :null => false
     t.string   "encrypted_password",           :limit => 128, :default => "", :null => false
     t.string   "reset_password_token"

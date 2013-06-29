@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',          '3.1.10'
-gem 'mysql2',         '0.3.11'
+gem 'sqlite3'
 gem 'bcrypt-ruby',    '3.0.1'
 gem 'devise',         '1.5.3'
 gem 'activeadmin',    '0.4.4'
