@@ -8,6 +8,11 @@ class AdminUser < ActiveRecord::Base
   
   before_save :process_phone_number
 
+
+  def send_two_factor_authentication_code(code)
+    logger.info ">>>>>>>>>>>  #{code} <<<<<<<<<<<<"
+  end
+
   private
 
   def process_phone_number
